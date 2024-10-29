@@ -1,0 +1,270 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .team-inner .article-image img {
+    margin: 0;
+    line-height: 0;
+}
+ .iq_row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 576px){
+    .col_2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666666%;
+        flex: 0 0 16.666666%;
+        max-width: 16.666666%;
+    }
+    .col_3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col_4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col_5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .col_6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col_12 {
+        max-width: 100%;
+    }
+}
+@media (min-width: 577px) and (max-width: 1000px){
+    .col_2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col_3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col_4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col_4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col_6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col_12 {
+        max-width: 100%;
+    }
+}
+.col_1,.col_2,.col_3,.col_4,.col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+      
+    }
+ /* Team */
+.pa-15{
+	padding: 15px;
+}
+.iq_team_members .iq_team_member{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.iq_team_members .iq_team_member ul.social{
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: -37px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+}
+.iq_team_members ul.social li {
+    display: inline-block;
+}
+.iq_team_members .iq_team_member ul.social li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.iq_team_members .iq_team_member ul.social li a:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotate(45deg);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s;
+}
+.iq_team_members .iq_team_member .article-caption {
+    background: #202020;
+    padding: 20px 0;
+    color: #fff;
+    position: relative;
+    margin-top: -8px;
+}
+.iq_team_members .iq_team_details span {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.iq_team_members .iq_team_member .article-caption:before {
+    content: "+";
+    width: 20px;
+    height: 20px;
+    font-size: 17px;
+    color: #fff;
+    background: #202020;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    transition: all 0.3s ease 0s;
+}
+.iq_team_members .article-image {
+    position: relative;
+	    line-height: 0;
+}
+.iq_team_members .iq_team_member:hover .article-caption:before {
+    width: 100%;
+    background: #8475c9;
+    color: #8475c9;
+}
+.iq_team_members ul.social li a:hover {
+    color: #fff;
+}
+.iq_team_members .iq_team_member ul.social li:hover a:before {
+    background: #202020;
+    color: #fff;
+    transform: rotate(-45deg);
+}
+.iq_team_members .iq_team_member:hover .social {
+    transform: scale(1);
+}
+
+/* ends team */
+/* modern */
+.iq_team_members .modern-style{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.iq_team_members .modern-style .article-image{
+    height: auto;
+    -webkit-transition: -webkit-transform .25s;
+    transition: transform .25s;
+    top: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 0 none!important;
+    display: block;
+}
+
+.iq_team_members .modern-style .article-caption{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    height: auto;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .25s;
+    transition: transform .25s;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    display: block;
+}
+.iq_team_members .modern-style:hover .article-caption{
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.iq_team_members .team-inner{
+	overflow: hidden;
+	position: relative;
+}
+.iq_team_members  .modern-style  .article-caption {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.iq_team_members .modern-style  ul.social {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.iq_team_members .modern-style  ul.social a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+.classic-style .article-caption {
+    background: #fff;
+    text-align: center;
+	padding: 5px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+}
+.classic-style ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.classic-style ul.social li {
+    margin: 5px;
+}
+.classic-style ul.social li a {
+    color: #333;
+    padding: 1px 4px 1px 4px;
+    border: 1px solid #333;
+    display: block;
+    width: 20px;
+    border-radius: 100px;
+}
+.classic-style ul.social li a:hover {
+    color: #333;
+}
+/* ends modern */
